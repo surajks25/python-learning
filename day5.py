@@ -1,4 +1,4 @@
-#loops
+                                                                #while loops
 # count = 1
 # while count <= 5:
 #     print("hello")
@@ -89,10 +89,48 @@
 #     i+=1
 
 #odd remove
-i = 1
-while i <= 20:
-    if(i%2 != 0):
-        i += 1
-        continue #skip
-    print(i)
-    i+=1
+# i = 1
+# while i <= 20:
+#     if(i%2 != 0):
+#         i += 1
+#         continue #skip
+#     print(i)
+#     i+=1
+
+                                                                 # forloop
+# nums = [1,2,3,4,5]
+# for val in nums:
+#     print(val)
+
+# nums = ["potato", "mango", "orange", "banana"]
+# print(nums.index("potato"))
+
+#list
+# nums = ["potato", "mango", "orange", "banana"]
+# for val in nums:
+#     print(val)  
+
+#tuples also print using the foloop
+# tuple = (1,2,3,4,5,6,7)  
+# for e in tuple:
+#     print(e)
+
+# text = "apnacollege "  
+# for char in text:
+#     if char == "o":
+#         print("o found")
+#         break
+#     print(char)
+  
+# print("end")
+
+#task found the x value
+numbers = [1,2,3,4,5,6,7,8,9,5,6]
+x = 6
+idx = 0
+for value in numbers:
+    if value == x:
+        print("number found at idx ", idx)
+        # break
+    idx += 1
+    
