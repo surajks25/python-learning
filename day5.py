@@ -125,12 +125,143 @@
 # print("end")
 
 #task found the x value
-numbers = [1,2,3,4,5,6,7,8,9,5,6]
-x = 6
-idx = 0
-for value in numbers:
-    if value == x:
-        print("number found at idx ", idx)
-        # break
-    idx += 1
-    
+# numbers = [1,2,3,4,5,6,7,8,9,5,6]
+# x = 6
+# idx = 0
+# for value in numbers:
+#     if value == x:
+#         print("number found at idx ", idx)
+#         # break
+#     idx += 1
+
+                                                # range()
+# range function return of number starting from 0 by default, and increment by 1 by default and stops before a aprecifies number
+# range(start, stop, StopIteration)
+
+# seq = range(5)
+# for i in seq:
+#     print(i)
+
+# for i in range(5):
+#     print(i)
+
+# for i in range(2, 10, 3): #range(start, stop, step)
+#     print(i)
+
+#practise
+
+#print the squre root of number using the for loop
+# for i in range(1, 11, 1):
+#     print(i*i)
+
+# linear search
+# tuple = (1,16,33,25,80)
+# f = 25
+# for i in  range(0, len(tuple), 1):
+#     if f == tuple[i]:
+#         print("found", i)
+#         break
+# else:
+#     print("not found")
+
+# list = "hello"
+# for x in list:           
+#     print(x)
+
+                                                # palindrome number search chat gpt
+# t = (1, 2, 3, 3, 2, 1)
+
+# if t == t[::-1]:
+#     print("palindrome integer")
+# else:
+#     print("not palindrome")
+
+# t = (1, 2, 3, 3, 2, 1)
+# is_palindrome = True
+
+# for i in range(len(t)):
+#     if t[i] != t[len(t) - 1 - i]:
+#         is_palindrome = False
+#         break
+
+# if is_palindrome:
+#     print("palindrome integer")
+# else:
+#     print("not palindrome")
+
+ # palindrome string search chat gpt
+# text = "level"
+
+# if text == text[::-1]:
+#     print("palindrome string")
+# else:
+#     print("not palindrome")
+
+#explanation
+# Now in text[::-1]
+
+# start → not given → means start from end
+
+# stop → not given → means go till start
+
+# step = -1 → move backward one step at a time
+
+# # manually
+# text = "madam"
+# is_palindrome = True
+
+# for i in range(len(text)):
+#     if text[i] != text[len(text) - 1 - i]:
+#         is_palindrome = False
+#         break
+
+# if is_palindrome:
+#     print("palindrome string")
+# else:
+#     print("not palindrome")
+
+# text = "RaceCar"
+# text = text.lower() # sometime text is not a proper way we need to coert into lower case first
+
+
+# learn things basic first
+# string = "levelup"
+
+# for i in range(len(string)):
+#     print(i, "→", string[len(string) - 1 - i])
+
+#pass statement pass is null statement that does nothng it is used as placeholder for future code
+# for i in range(5):
+#     pass
+# print("skipped using the pass keyword")
+
+#print the sum of all number in n value
+
+# sum = 0
+# for i in range(0, 10, 1):
+#     sum = i + sum
+# print(sum)
+
+# or
+
+# n=5
+# sum = 0
+# for i in range(1, n+1): #range(start, stop)
+#     sum += i
+# print(sum)
+
+# facotrial findout
+# mul = 1
+# for i in range(1,6,1):
+#     mul = mul * i
+
+# print(mul)
+
+# or
+
+# n = 5
+# mul = 1  # start with 1
+# for i in range(1, n+1):  # multiply 1*2*3*4*5
+#     mul = mul * i
+
+# print(mul)
