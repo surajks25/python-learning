@@ -164,12 +164,32 @@
 # fun(5)
 
 # print the list values inside the recursion
-def fuction_rec(list, idx=0):
-    if(idx == len(list)):
-        return
-    print(list[idx], end="")
-    fuction_rec(list, idx+1)
+# def fuction_rec(list, idx=0):
+#     if(idx == len(list)):
+#         return
+#     print(list[idx], end="")
+#     fuction_rec(list, idx+1)
     
-list = ["a","b","c","d","e","f","g"]
+# list = ["a","b","c","d","e","f","g"]
 
-fuction_rec(list)
+# fuction_rec(list)
+
+# def fuction_rec(list, idx=7):
+#     if(idx == len(list)):
+#         return 1
+#     print(list[idx], end="")
+#     fuction_rec(list, idx+1)
+    
+# list = ["a","b","c","d","e","f","g"]
+
+# v = fuction_rec(list)
+# print(v)
+
+# def show_numbers():
+#     for i in range(5):
+#         if i == 3:
+#             return  # stops the whole function
+#         print(i)
+#     print("Loop finished")  # this will NOT run
+
+# show_numbers()
