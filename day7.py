@@ -134,10 +134,40 @@
 #     f.write(new_data)
 
 # cheack if the word is exist in the text file or not word = learning
-word = "learning"
+# word = "learning"
+# with open("sample.txt", "r") as f:
+#     data = f.read()
+#     if (data.find(word) != -1):
+#         print(data.find(word)) #-1 means if the learnig word found in the index 18 its true print found -1 menas if not found index will goes all text next - value so this line refer to if index value is not eqaal to - print found if - index print not found thats it
+#         print("found")
+#     else:
+#         print(data.find(word))
+#         print("not found")
+
+#inside the function we made this code
+
+# def valid(word):
+#     with open("sample.txt", "r") as f:
+#         data = f.read()
+#     if (data.find(word) != -1):
+#         print(data.find(word)) #-1 means if the learnig word found in the index 18 its true print found -1 menas if not found index will goes all text next - value so this line refer to if index value is not eqaal to - print found if - index print not found thats it
+#         print("found")
+#     else:
+#         print(data.find(word))
+#         print("not found")
+
+# word = input("Enter the word to search: ")
+# valid(word)
+
 with open("sample.txt", "r") as f:
     data = f.read()
-    if data.find(word) != -1:
-        print("found")
-    else:
-        print("not found")
+    print(data)
+
+    num = ""
+    for i in range(len(data)):
+        if(data[i] == ","):
+            print(int(num))
+            num = ""
+        else:
+            num += data[i]
+            
